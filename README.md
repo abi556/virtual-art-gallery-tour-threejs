@@ -224,15 +224,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-- **Developer**: [Your Name]
-- **Course**: Software Engineering Year 3
-- **Institution**: [Your University]
+- **Developers**: Abiy Hailu, Natnael Eyuel, Yamlak Negash, Dame Abera, Eyerusalem T/brhan, Kaku Amsalu
+- **Course**: Computer Graphics
+- **Institution**: Addis Ababa University
 
 ## 📞 Support
 
 For questions or issues:
 - Create an issue on GitHub
-- Contact: [your.email@university.edu]
+- Contact: abiy.hailu-ug@aau.edu.et
 
 ---
 
