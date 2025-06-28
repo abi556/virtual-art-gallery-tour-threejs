@@ -5,20 +5,28 @@ An interactive 3D virtual art gallery built with Three.js, featuring immersive n
 ## 🎨 Features
 
 ### Core Features
-- **3D Gallery Environment**: Immersive 3D space with walls, floor, and lighting
-- **Interactive Art Pieces**: 5 unique art pieces with hover effects and click interactions
-- **Camera Controls**: OrbitControls for smooth camera navigation
-- **Raycasting**: Click and hover detection for art piece interaction
+- **3D Gallery Environment**: Immersive 3D space with checkerboard floor, textured walls, and modern ceiling
+- **Interactive Art Pieces**: Multiple paintings and 3D sculptures, each with info panels and camera close-up animation
+- **Camera Controls**: OrbitControls for smooth camera navigation, plus WASD keyboard movement
+- **Raycasting**: Click and hover detection for all art pieces, sculptures, and the door
 - **Responsive Design**: Works on desktop and mobile devices
-- **Modern UI**: Clean, intuitive interface with glassmorphism effects
+- **Modern UI**: Clean, intuitive interface with navigation and info overlays
 
 ### Technical Features
 - **Three.js Integration**: Full 3D rendering with WebGL
-- **Lighting System**: Ambient, directional, and spot lighting
+- **Lighting System**: Ambient, directional, spot, and point lighting for realistic illumination
 - **Shadow Mapping**: Realistic shadows and lighting effects
 - **Animation**: Smooth camera movements and object animations
-- **Event Handling**: Mouse and keyboard controls
+- **Event Handling**: Mouse and keyboard controls (WASD for movement)
 - **Performance Optimized**: Efficient rendering and memory management
+
+### Recent Additions & Improvements
+- **Front Wall Art**: Added "Napoleon Crossing the Alps" painting with correct placement, info, and interactivity
+- **Benches**: Two 3D benches (bench.glb) placed near the left and right walls, scaled and positioned precisely on the floor
+- **GLB Model Compatibility**: All GLB models (including benches) use simplified materials for maximum compatibility
+- **Gallery Symmetry**: Art and sculptures are symmetrically placed relative to the door
+- **UI Streamlining**: Removed Toggle Lights and Fullscreen buttons for a cleaner interface
+- **Robust Error Handling**: Improved debug logging and error handling for asset loading
 
 ## 🚀 Quick Start
 
@@ -56,12 +64,10 @@ An interactive 3D virtual art gallery built with Three.js, featuring immersive n
 
 ### Keyboard Controls
 - **W/A/S/D**: Move camera forward/left/backward/right
-- **Q/E**: Move camera up/down
 
 ### UI Controls
 - **Reset View**: Return camera to default position
-- **Toggle Lights**: Turn gallery lighting on/off
-- **Fullscreen**: Enter/exit fullscreen mode
+- **Navigation Buttons**: Instantly view each wall
 
 ## 🏗️ Project Structure
 
@@ -105,16 +111,20 @@ const artData = [
         year: "2024",
         description: "Art piece description",
         position: [x, y, z],  // 3D coordinates
-        color: 0xhexcolor     // Hex color code
+        image: "/art/your-image.jpg" // or .png, .webp
     }
     // ... more art pieces
 ];
 ```
 
+### Adding 3D Models
+
+To add new 3D models (GLB), add them to the `public/models/` directory and load them in `main.js` using `GLTFLoader`. For benches and other furniture, ensure you set a simple material to avoid GPU texture unit errors.
+
 ### Customizing the Gallery
 
 - **Lighting**: Modify `setupLighting()` method in `main.js`
-- **Materials**: Change materials in `createArtPiece()` method
+- **Materials**: Change materials in `createArtPieces()` method
 - **Camera**: Adjust camera settings in `setupCamera()` method
 - **UI**: Customize styles in `style.css`
 
@@ -180,11 +190,11 @@ This project demonstrates understanding of:
 
 ### Technical Requirements Fulfilled
 
-- ✅ **5+ unique 3D objects** (4 paintings + 1 sculpture)
-- ✅ **Camera controls** (OrbitControls implementation)
-- ✅ **Lighting system** (ambient, directional, spot lights)
+- ✅ **Multiple unique 2D and 3D art pieces** (paintings, sculptures, benches)
+- ✅ **Camera controls** (OrbitControls, WASD movement)
+- ✅ **Lighting system** (ambient, directional, spot, and point lights)
 - ✅ **User interaction** (click, hover, keyboard controls)
-- ✅ **Texture mapping** (procedural materials and colors)
+- ✅ **Texture mapping** (images and procedural materials)
 - ✅ **Animation** (camera movement, object scaling, rotation)
 
 ## 🔧 Troubleshooting
