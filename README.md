@@ -2,6 +2,18 @@
 
 An interactive 3D virtual art gallery built with Three.js, featuring immersive navigation, interactive art pieces, and modern web technologies.
 
+## 👥 Team
+**Developers**
+- **Abiy Hailu** - UGR/8730/15
+- **Natnael Eyuel** - UGR/4424/15
+- **Yamlak Ngeash** - UGR/2910/15
+- **Eyerusalem T/brhan** - UGR/6149/15
+- **Dame Abera** - UGR/0123/15
+- **Kaku Amsalu** - UGR/3710/15
+
+- **Course**: Computer Graphics
+- **Institution**: Addis Ababa University
+
 ## 🎨 Features
 
 ### Core Features
@@ -230,13 +242,7 @@ This project demonstrates understanding of:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Developers**: Abiy Hailu, Natnael Eyuel, Yamlak Negash, Dame Abera, Eyerusalem T/brhan, Kaku Amsalu
-- **Course**: Computer Graphics
-- **Institution**: Addis Ababa University
+This project is developed for educational purposes as part of the Computer Graphics course at Addis Ababa University.
 
 ## 📞 Support
 
